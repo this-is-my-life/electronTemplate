@@ -1,0 +1,38 @@
+{
+  "name": "<appname>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron .",
+    "build": "build --win --x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMHStudio/<github>.git"
+  },
+  "author": "PMH Studio / PMH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PMHStudio/<github>/issues"
+  },
+  "homepage": "https://github.com/PMHStudio/<github>#readme",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "electron": "^5.0.6",
+    "electron-builder": "^20.44.4"
+  },
+  "build": {
+    "appId": "kr.kro.pmhstudio.<appname>",
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "publisherName": "PMH Studio / PMH"
+    }
+  }
+}
